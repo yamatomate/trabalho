@@ -14,7 +14,7 @@ apartir da rota base as outras rotas se ramificam.
 > obs: aqui há rotas que se ramificam em home
 --- 
 
-**/login**
+#### /login ####
 tipo: post
 faz login de um usuario
 exemplo em json:
@@ -29,7 +29,7 @@ exemplo em json:
 rota base: ``home/usuario``
 manipulação de usuario e afims
 
-**/usuario**
+#### /usuario ####
 tipo: Post
 salva um usuario
 exemplo em JSON:

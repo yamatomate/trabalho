@@ -14,7 +14,7 @@ apartir da rota base as outras rotas se ramificam.
 > obs: aqui há rotas que se ramificam em home
 --- 
 
-#### ``/login` ####
+#### ``/login`` ####
 tipo: post <br/>
 faz login de um usuario<br/>
 exemplo em json:

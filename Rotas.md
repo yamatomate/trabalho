@@ -15,8 +15,8 @@ apartir da rota base as outras rotas se ramificam.
 --- 
 
 #### /login ####
-tipo: post
-faz login de um usuario
+tipo: post_
+faz login de um usuario_
 exemplo em json:
 ```
 {
@@ -26,8 +26,8 @@ exemplo em json:
 ```
 ### caminho relacionado a usuario ###
 ---
-rota base: ``home/usuario``
-manipulação de usuario e afims
+rota base: ``home/usuario``_
+manipulação de usuario e afims_
 
 #### /usuario ####
 tipo: Post

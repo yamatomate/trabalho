@@ -7,8 +7,8 @@ porta padrão aberta para comunicação ``:8080``
 * Server AWs do vinicius: ``18.206.68.106:8080``
 
 ## rotas disponiveis ##
-IP porta + rota 
-rota base :``/home``
+IP porta + rota </ br>
+rota base :``/home``</ br>
 apartir da rota base as outras rotas se ramificam.
 
 > obs: aqui há rotas que se ramificam em home
@@ -16,7 +16,7 @@ apartir da rota base as outras rotas se ramificam.
 
 #### /login ####
 tipo: post </ br>
-faz login de um usuario_
+faz login de um usuario</ br>
 exemplo em json:
 ```
 {
@@ -26,12 +26,12 @@ exemplo em json:
 ```
 ### caminho relacionado a usuario ###
 ---
-rota base: ``home/usuario``_
-manipulação de usuario e afims_
+rota base: ``home/usuario``</ br>
+manipulação de usuario e afims</ br>
 
 #### /usuario ####
-tipo: Post
-salva um usuario
+tipo: Post</ br>
+salva um usuario</ br>
 exemplo em JSON:
 ```
 {
@@ -39,12 +39,12 @@ exemplo em JSON:
 }
 ```
 ### caminho relacionado a clinica ###
-rota base: ``home/clinica``
+rota base: ``home/clinica``</ br>
 manipulação de clinicas e afims
 
 **/cadastrar**
-precisa de token
-tipo: post
+precisa de token</ br>
+tipo: post</ br>
 cadastra clinicas
 ```
 {

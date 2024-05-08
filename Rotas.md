@@ -14,7 +14,7 @@ apartir da rota base as outras rotas se ramificam.
 > obs: aqui há rotas que se ramificam em home
 --- 
 
-#### ``/login`` ####
+#### /login ####
 tipo: post <br/>
 faz login de um usuario<br/>
 exemplo em json:
@@ -42,7 +42,7 @@ exemplo em JSON:
 rota base: ``home/clinica``<br/>
 manipulação de clinicas e afims
 
-**/cadastrar**
+#### /cadastrar ####
 precisa de token<br/>
 tipo: post<br/>
 cadastra clinicas
@@ -53,12 +53,12 @@ cadastra clinicas
 }
 ```
 
-**/listar**
+#### /listar ####
 precisa de token<br/>
 tipo: get<br/>
 lista todas as clinicas salvas<br/>
 
-**{id}**
+#### {id} ####
 precisa de token<br/>
 tipo: get<br/>
 lista um clinica baseado no id no banco<br/>

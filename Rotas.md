@@ -4,6 +4,7 @@ caminho das rotas que o pessoal do front-end pode utilizar e seus JSON com exemp
 
 ## IP base ##
 porta padrão aberta para comunicação ``:8080`` 
+* Server Local: ``localhost:8080``
 * Server AWs do vinicius: ``18.206.68.106:8080``
 
 ## rotas disponiveis ##

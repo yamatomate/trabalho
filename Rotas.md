@@ -26,12 +26,12 @@ exemplo em json:
 ```
 ### caminho relacionado a usuario ###
 ---
-rota base: ``home/usuario``</ br>
-manipulação de usuario e afims</ br>
+rota base: ``home/usuario``<br/>
+manipulação de usuario e afims<br/>
 
 #### /usuario ####
-tipo: Post</ br>
-salva um usuario</ br>
+tipo: Post<br/>
+salva um usuario<br/>
 exemplo em JSON:
 ```
 {
@@ -39,12 +39,12 @@ exemplo em JSON:
 }
 ```
 ### caminho relacionado a clinica ###
-rota base: ``home/clinica``</ br>
+rota base: ``home/clinica``<br/>
 manipulação de clinicas e afims
 
 **/cadastrar**
-precisa de token</ br>
-tipo: post</ br>
+precisa de token<br/>
+tipo: post<br/>
 cadastra clinicas
 ```
 {
@@ -54,14 +54,14 @@ cadastra clinicas
 ```
 
 **/listar**
-precisa de token
-tipo: get
-lista todas as clinicas salvas
+precisa de token<br/>
+tipo: get<br/>
+lista todas as clinicas salvas<br/>
 
 **{id}**
-precisa de token
-tipo: get
-lista um clinica baseado no id no banco
+precisa de token<br/>
+tipo: get<br/>
+lista um clinica baseado no id no banco<br/>
 ```
 {
 	"id": "<id da clinica que procura>",

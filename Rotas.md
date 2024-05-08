@@ -7,16 +7,16 @@ porta padrão aberta para comunicação ``:8080``
 * Server AWs do vinicius: ``18.206.68.106:8080``
 
 ## rotas disponiveis ##
-IP porta + rota </ br>
-rota base :``/home``</ br>
+IP porta + rota <br/>
+rota base :``/home``<br/>
 apartir da rota base as outras rotas se ramificam.
 
 > obs: aqui há rotas que se ramificam em home
 --- 
 
 #### /login ####
-tipo: post </ br>
-faz login de um usuario</ br>
+tipo: post <br/>
+faz login de um usuario<br/>
 exemplo em json:
 ```
 {

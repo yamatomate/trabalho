@@ -15,7 +15,7 @@ apartir da rota base as outras rotas se ramificam.
 --- 
 
 #### /login ####
-tipo: post_
+tipo: post </ br>
 faz login de um usuario_
 exemplo em json:
 ```

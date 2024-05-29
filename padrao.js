@@ -1,8 +1,8 @@
 const rotas = [
     ["classico","benClassico.html"],
-    ["12",NaN],
-    ["22",NaN],
-    ["23",NaN]
+    ["força alienigena","benForca.html"],
+    ["supremacia alienigena","benSupre.html"],
+    ["omniverse","benOmniverse.html"]
 ]
 const sites = new Map(rotas);
 console.log(sites.size);
@@ -15,13 +15,13 @@ function pesquisar1(){
     var iptPesquisa = ipPes.value;
     var pesqui = document.getElementById('pes');
     pesqui.style.display = "flex";
-    pesqui.innerHTML = "<p></p>"
+    pesqui.innerHTML = ""
     for (const [chave, caminho] of sites){
         console.log(iptPesquisa + " <=> " + chave +"||"+caminho+ " => " + chave.localeCompare(iptPesquisa));
-        if ( chave.localeCompare(iptPesquisa) == 0) {
+        if ( chave.localeCompare(iptPesquisa) == 0 ) {
             pesqui.innerHTML = `<a href=${caminho}>${chave}</a>`;
-        } else  {
-            pesqui.innerHTML += `<p>${chave}</p>`;
+        } if (chave.includes(iptPesquisa) ) {
+            pesqui.innerHTML += `<a href=${caminho}>${chave}</a>`
         }
     }
 

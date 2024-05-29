@@ -53,13 +53,13 @@ header .dropdown:hover .dropdown-menu{
 .barraPes{
     background-color: rgb(12, 158, 56);
     border-radius: 30px 30px 30px 30px;
-    padding-inline: 30px;
     display: flex;
-    margin-inline: 20vw;
+    align-self: center;
 }
 .barraPes input{
     padding: 5px;
     border: none;
+    border-radius: 30px 30px 30px 30px;
     background-color: rgba(10, 148, 51, 0.322);
     margin-inline: 2px;
     font-size: px;
@@ -80,16 +80,22 @@ header .dropdown:hover .dropdown-menu{
     background-color: rgb(21, 223, 81);
 }
 #icon{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
 }
 .modoCE{
-    padding: 5px;
-    padding-inline: 50px;
-    background-color: rgb(122, 60, 60);
-
+    margin: 5px;
+    padding-inline: 30px;
+    background-color: rgb(120, 226, 168);
+    border-radius: 25px 25px 25px 25px;
 }
-
+.modoCE:hover {
+    cursor: pointer;
+}
+.modoCE #icon{
+    padding-right: 10px;
+}
 
 .corpo{
     display: flex;

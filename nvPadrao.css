@@ -6,15 +6,15 @@
 body{
     background-color: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 101vh;
     width: 100%;
     display: block;
 }
 header {
     background-color: rgb(18, 184, 26);
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #logo img{
@@ -22,13 +22,19 @@ header {
 }
 .dropdown{
     padding: 15px;
-    display: inline-block;
 }
-header li:hover{
+header nav{
+    display: flex;
+}
+header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+header nav li:hover{
     background-color: rgb(82, 15, 138);
     color:aliceblue;
 }
-header a:hover{
+header nav ul li a:hover{
     background-color: rgb(42, 31, 51);
 }
 .dropdown-menu{
@@ -46,27 +52,24 @@ header .dropdown:hover .dropdown-menu{
     flex-direction: column;
     position: absolute;
 }
+
 .barraPes{
-    background-color: rgb(12, 158, 56);
-    border-radius: 30px 30px 30px 30px;
     display: flex;
     align-self: center;
+
 }
 .barraPes input{
     padding: 5px;
     border: none;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 30px 0px 0px 30px;
     background-color: rgba(10, 148, 51, 0.322);
-    margin-inline: 2px;
-    font-size: px;
 }
 .barraPes button {
     background-color: rgb(12, 158, 56);
     align-self: center;
-    border-radius: 50%;
+    border-radius: 0px 30px 30px 0px;
     border: none;
     padding: 5px;
-
 }
 .barraPes button:hover{
     cursor: pointer;
@@ -75,6 +78,7 @@ header .dropdown:hover .dropdown-menu{
 .barraPes button:active{
     background-color: rgb(21, 223, 81);
 }
+
 #icon{
     width: 40px;
     height: 40px;
@@ -99,6 +103,7 @@ header .dropdown:hover .dropdown-menu{
     height: 100vh;
 }
 main {
+    height: 100%;
     padding: 15px;
 }
 #late1{
@@ -111,6 +116,5 @@ main {
 }
 footer{
     padding: 10px;
-    font-size: 2vh;
     background-color: rgb(165, 165, 165);
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="nvPadrao.css">
+    <script src="padrao.js"></script>
 </head>
 <body>
     <header>
@@ -67,14 +68,11 @@
         </ul>
             <!--barra de pesquisa-->
             <div class="barraPes">
-                <input id="inputBP" type="text" value="">
+                <input id="inputBP" type="text" value="" onkeyup="pesquisar1()" onchange="restarBP()">
                 <button>
                     <img src="imagens/lupa.svg">
                 </button>
-                <div class="pesquisa">
-                    <a>
-                        teste1
-                    </a>
+                <div class="pesquisa" id="pes">
                 </div>
             </div>
         </nav>

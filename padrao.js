@@ -3,7 +3,7 @@ const rotas = [
     ["força alienigena","benForca.html"],
     ["supremacia alienigena","benSupre.html"],
     ["omniverse","benOmniverse.html"],
-    ["aliens","alienstodosAliens.html"],
+    ["aliens","aliens/todosAliens.html"],
     ["objetos", "objetos/todosObjetos.html"]
 ]
 const sites = new Map(rotas);

@@ -20,6 +20,11 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
+header a{
+    color: black;
+    text-decoration: none;
+}
 header a #icon{
     width: 45px;
     height: 45px;
@@ -39,12 +44,12 @@ header nav ul{
     padding: 15px;
 }
 .dropdown:hover{
-    background-color: blueviolet;
+    background-color: rgb(21, 255, 0);
 }
 .dropdown-menu{
     display: none;
     position: absolute;
-    background-color: rgb(40, 54, 26);  
+    background-color: rgb(102, 161, 43);  
     transform: translateX(-15px);
     top: 8%;
     border-radius: 25px 25px 25px 25px;
@@ -55,6 +60,11 @@ header nav ul{
 .dropdown:hover .dropdown-menu{
     display: flex;
     flex-direction: column;
+}
+
+.dropdown-menu a:hover{
+    background-color: rgb(3, 150, 16);
+    border-radius: 25px 25px 25px 25px;
 }
 
 .barraPes{
@@ -72,7 +82,7 @@ header nav ul{
     width: 85%;
 }
 .barraPes button {
-    background-color: rgb(12, 158, 56);
+    background-color: #0A943352;
     border-radius: 0px 30px 30px 0px;
     border: none;
     padding: 10px;

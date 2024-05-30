@@ -120,14 +120,16 @@ header nav ul{
     height: 30px;
     margin: 5px;
 }
-.modoCE{
+.trilho{
     margin: 5px;
-    background-color: rgb(120, 226, 168);
+    background-color: rgb(94, 224, 153);
     border-radius: 25px 25px 25px 25px;
     width: 6%;
-}
-.modoCE:hover {
     cursor: pointer;
+}
+
+.trilho .indicador {
+    transform: translateX(60px);
 }
 
 main {
@@ -144,4 +146,8 @@ footer{
     padding: 10px;
     background-color: rgb(165, 165, 165);
     width: 100%;
+}
+
+.modoCE #icon{
+    transform: translateX(0%);
 }

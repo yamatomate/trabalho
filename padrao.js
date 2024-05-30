@@ -4,7 +4,15 @@ const rotas = [
     ["supremacia alienigena","benSupre.html"],
     ["omniverse","benOmniverse.html"],
     ["aliens","aliens/todosAliens.html"],
-    ["objetos", "objetos/todosObjetos.html"]
+    ["objetos", "objetos/todosObjetos.html"],
+    ["ben", "personagens/ben.html"],
+    ["Azmuth", "personagens/Azmuth.html"],
+    ["gwen", "personagens/gwen.html"],
+    ["kevin", "personagens/kevin.html"],
+    ["rook", "personagens/Rook.html"],
+    ["tetrax", "personagens/tetrax.html"],
+    ["vo max", "personagens/Vo_max.html"],
+    ["formulario", "formulario.html"],
 ]
 const sites = new Map(rotas);
 console.log(sites.size);
@@ -39,3 +47,9 @@ function restarBP(){
     pesqui.style = "";
     btnPes.style = "";
 }
+
+let trilho = document.getElementById('trilho')
+let indicador = document.querySelector('indicador')
+
+trilho.addEventListener('click', ()=>{
+})

@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: black;
     width: 100%;
     display: block;
     background-image: url(imagens/logoben.svg);
@@ -14,7 +15,7 @@ body{
     backdrop-filter: blur(15px);
 }
 header {
-    background-color: rgb(18, 184, 26);
+    background-color: rgb(35, 73, 37);
     width: 100%;
     display: flex;
     align-items: center;
@@ -44,7 +45,7 @@ header nav ul{
 .dropdown-menu{
     display: none;
     position: absolute;
-    background-color: rgb(40, 54, 26);  
+    background-color: rgb(59, 104, 14);  
     transform: translateX(-15px);
     top: 8%;
     border-radius: 25px 25px 25px 25px;
@@ -124,7 +125,7 @@ header nav ul{
     width: 30px;
     height: 30px;
     margin: 5px;
-    transform: translateX(0%);
+    transform: translateX(110%);
     pointer-events: none;
 }
 
@@ -140,7 +141,7 @@ header nav ul{
 }
 
 main {
-    background-color: rgba(189, 224, 255, 0.589);
+    background-color: rgba(39, 44, 48, 0.527);
     border-radius: 25px 25px 25px 25px;
     margin-block: 10px;
     margin-inline: 60px;
@@ -151,6 +152,6 @@ main {
 footer{
     bottom: 0;
     padding: 10px;
-    background-color: rgb(165, 165, 165);
+    background-color: rgb(34, 33, 33);
     width: 100%;
 }

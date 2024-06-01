@@ -7,7 +7,7 @@
     <link id="idCss" rel="stylesheet" type="text/css" href="nvPadrao.css">
     <script src="padrao.js" defer></script>
 </head>
-<body onclick="restarBP()">
+<body onclick="">
     <header>
         <nav>
             <a>
@@ -67,12 +67,12 @@
             </li>
         </ul>
             <!--barra de pesquisa-->
-            <div class="barraPes">
-                <input id="inputBP" type="text" value="" onkeyup="pesquisar1()" onclick="pesquisar1()">
+            <div class="barraPes" autocomplete="off">
+                <input id="inputBP" type="text" value="" onkeyup="pesquisar1()" onblur="restarBP()">
                 <button id="btnBp">
                     <img src="imagens/lupa.svg">
-                </button>
-                <div class="pesquisa" id="pes">
+                </button onclick="confirmar()">
+                    <div class="pesquisa" id="pes">
                 </div>
             </div>
         </nav>

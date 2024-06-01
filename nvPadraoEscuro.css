@@ -37,18 +37,19 @@ header nav ul{
 
 .dropdown {
     display: inline-block;
-    padding: 15px;
+    padding: 18px;
 }
+
 .dropdown:hover{
-    background-color: blueviolet;
+    background-color: rgb(0, 255, 21);
 }
 .dropdown-menu{
     display: none;
     position: absolute;
     background-color: rgb(59, 104, 14);  
-    transform: translateX(-15px);
-    top: 8%;
-    border-radius: 25px 25px 25px 25px;
+    transform: translateX(-18.3px);
+    top: 7%;
+    border-radius: 0px 0px 0px 0px;
 }
 .dropdown-menu a{
     padding: 15px;

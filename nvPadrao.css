@@ -41,7 +41,7 @@ header nav ul{
 
 .dropdown {
     display: inline-block;
-    padding: 15px;
+    padding: 18px;
 }
 .dropdown:hover{
     background-color: rgb(21, 255, 0);
@@ -50,9 +50,8 @@ header nav ul{
     display: none;
     position: absolute;
     background-color: rgb(102, 161, 43);  
-    transform: translateX(-15px);
-    top: 8%;
-    border-radius: 25px 25px 25px 25px;
+    transform: translateX(-18.3px);
+    top: 7%;
 }
 .dropdown-menu a{
     padding: 15px;
@@ -64,7 +63,6 @@ header nav ul{
 
 .dropdown-menu a:hover{
     background-color: rgb(3, 150, 16);
-    border-radius: 25px 25px 25px 25px;
 }
 
 .barraPes{

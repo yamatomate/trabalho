@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --cor-primaria: #3a95d1;
+    --cor-secundaria: rgba(219, 238, 255, 0.589);
+    --cor-terciaria: #e74c3c;
+    --main-bg-color: rgb(21, 255, 0);
+}
+
 body{
     color: rgb(0, 0, 0);
     width: 100%;
@@ -13,8 +21,9 @@ body{
     background-repeat: no-repeat;
     backdrop-filter: blur(15px);
 }
+
 header {
-    background-color: rgb(18, 184, 26);
+    background-color: var(--main-bg-color);
     width: 100%;
     display: flex;
     align-items: center;
@@ -153,7 +162,7 @@ header nav ul{
 }
 
 main {
-    background-color: rgba(189, 224, 255, 0.589);
+    background-color: var(--cor-secundaria);
     border-radius: 25px 25px 25px 25px;
     margin-block: 10px;
     margin-inline: 60px;

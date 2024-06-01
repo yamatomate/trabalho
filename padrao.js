@@ -70,14 +70,16 @@ function restarBP(){
 }
 
 function mudarTema() {
-    console.log("teste")
-    const css = document.getElementById("idCss")
-    const iconCE = document.getElementById("bolsonaro_de_calcinha")
-    if (css.getAttribute("href") == "nvPadrao.css"){
-        css.setAttribute("href","nvPadraoEscuro.css")
-        iconCE.setAttribute("src","imagens/moon-svgrepo-com.svg")
-    } else {
-        css.setAttribute("href","nvPadrao.css")
-        iconCE.setAttribute("src","imagens/sun-svgrepo-com.svg")
+    if (tema == 0) {
+        r.style.setProperty ('--main-bg-color', '#3a95d1');
+        tema = 1
+    }
+    else {
+        r.style.setProperty ('--main-bg-color', '#00FF00');
+        tema = 0
     }
 }
+
+var tema = 0
+
+var r = document.querySelector(':root');

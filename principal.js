@@ -80,10 +80,8 @@ if (!corpo.includes("nada")) {
   corpoBdy.style.backgroundSize = "cover";
 }
 
-
-
 // tema claro = false; tema escuro = true
-let tema = sessionStorage.getItem("tema");
+var tema = sessionStorage.getItem("tema");
 
 if (tema === null) {
   tema = false;
@@ -99,7 +97,11 @@ atualizarTema();
 // botão de mudança de tema
 function mudarTema() {
   console.log("alterando tema de: " + tema);
-  tema = !tema;
+  if (tema == false) {
+    tema = true;
+  } else {
+    tema = false;
+  }
   console.log("alterando tema para: " + tema);
   sessionStorage.setItem("tema", tema);
   atualizarTema();
@@ -108,7 +110,7 @@ function mudarTema() {
 function atualizarTema() {
   const css = document.getElementById("idCss");
   const icone = document.getElementById("bolsonaro_de_calcinha");
-  
+
   if (tema) {
     css.setAttribute("href", "./temaEscuro.css");
     icone.style.filter = "var(--icone-escuro)";

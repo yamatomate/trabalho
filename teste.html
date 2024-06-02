@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link id="idCss" rel="stylesheet" type="text/css" href="nvPadrao.css">
+    <link rel="stylesheet" type="text/css" href="padrao.css">
+    <link id="idCss" rel="stylesheet" type="text/css" href="temaClaro.css">
     <script src="padrao.js" defer></script>
 </head>
-<body onclick="">
+<body>
     <header>
         <nav>
-            <a>
+            <a href="pagina_inicial.html">
                 <img id="icon" src="imagens/logoben.svg">
             </a>
         <ul>
@@ -69,9 +70,9 @@
             <!--barra de pesquisa-->
             <div class="barraPes" autocomplete="off">
                 <input id="inputBP" type="text" value="" onkeyup="pesquisar1()" onblur="restarBP()">
-                <button id="btnBp">
+                <button id="btnBp" onclick="confirmar()">
                     <img src="imagens/lupa.svg">
-                </button onclick="confirmar()">
+                </button>
                     <div class="pesquisa" id="pes">
                 </div>
             </div>
@@ -84,7 +85,9 @@
     </header>
     <!--corpo-->
         <main>
-            
+            <video src="https://youtube.com/shorts/3HF7tVl68vI?si=TlTcj_GbL49sqAzr">
+
+            </video>
         </main>
     <footer>
         <p>feito por Gustavo Lisboa e Pablo William</p>

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link id="idCss" rel="stylesheet" type="text/css" href="nvPadrao.css">
+    <link rel="stylesheet" type="text/css" href="padrao.css">
+    <link id="idCss" rel="stylesheet" type="text/css" href="temaClaro.css">
     <script src="padrao.js" defer></script>
 </head>
-<body onclick="restarBP()">
+<body>
     <header>
         <nav>
-            <a>
+            <a href="pagina_inicial.html">
                 <img id="icon" src="imagens/logoben.svg">
             </a>
         <ul>
@@ -57,7 +58,7 @@
                     mais
                 </p>
                 <div class="dropdown-menu">
-                    <a>
+                    <a href="formulario.html">
                         formulario
                     </a>
                     <a>
@@ -67,12 +68,12 @@
             </li>
         </ul>
             <!--barra de pesquisa-->
-            <div class="barraPes">
-                <input id="inputBP" type="text" value="" onkeyup="pesquisar1()">
+            <div class="barraPes" autocomplete="off">
+                <input id="inputBP" type="text" value="" onkeyup="pesquisar1()" onblur="restarBP()">
                 <button id="btnBp" onclick="confirmar()">
                     <img src="imagens/lupa.svg">
                 </button>
-                <div class="pesquisa" id="pes">
+                    <div class="pesquisa" id="pes">
                 </div>
             </div>
         </nav>
@@ -106,5 +107,6 @@
     <footer>
         <p>feito por Gustavo Lisboa e Pablo William</p>
     </footer>        
+
 </body>
 </html>

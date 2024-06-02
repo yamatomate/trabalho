@@ -1,0 +1,14 @@
+:root {
+    --cor-zero: rgb(255, 255, 255);
+    --cor-um: #ffffff;
+    --cor-dois: rgb(3, 112, 52);
+    --cor-tres: rgb(176, 83, 230);
+    --cor-quatro: rgb(77, 95, 80);
+    --cor-cinco: rgb(128, 128, 128);
+    --cor-seis: rgb(110, 110, 110);
+    --cor-sete: rgb(95, 95, 95);
+    --cor-oito: rgb(77, 77, 77);
+    --cor-nove: rgba(70, 97, 97, 0.726);
+    --cor-dez: rgb(78, 78, 78);
+    --cor-onze: rgb(0,0,0);
+}

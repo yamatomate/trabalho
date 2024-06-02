@@ -15,6 +15,18 @@ const sites = [
     ["formulario", "formulario.html"]
 ];
 
+var tema;
+
+try{
+    tema = sessionStorage.getItem("tema");
+    console.log("consegui")
+    atualizarTema();
+} catch(error) {
+    sessionStorage.setItem("tema", true);
+    tema = sessionStorage.getItem("tema");
+    atualizarTema();
+}
+
 console.log(sites);
 console.log(sites.length);
 var escolhido = null;
@@ -31,7 +43,6 @@ function pesquisar1(){
     var opa = 0;
     var i = 0;
     escolhido = null;
-    if (iptPesquisa.length > 3){
         console.log("começando varredura")
         for (i = 0; i < sites.length; i++){
             console.log(`${i} (${iptPesquisa} == ${sites[i][0]})=${sites[i][0].includes(iptPesquisa)}`);
@@ -49,13 +60,12 @@ function pesquisar1(){
         }
         console.log("varredura completa " + opa)
     }
-}
 function confirmar(){
     var tavazio = escolhido != null
     console.log(tavazio)
     if (tavazio){
         console.log("tem algo:" + escolhido);
-        window.open(escolhido[1], "_self")
+        window.open(escolhido[1], "_self");
     } else {
         console.log("tem nada:" + escolhido);
     }
@@ -69,17 +79,30 @@ function restarBP(){
     btnPes.style = "";
 }
 
-function mudarTema() {
-    if (tema == 0) {
-        r.style.setProperty ('--main-bg-color', '#3a95d1');
-        tema = 1
+function mudarTema(){
+    var icone = document.getElementById("bolsonaro_de_calcinha");
+    if (tema == true){
+        tema = false;
+        icone.style.transform = "translateX(110%)";
+        icone.style.filter = "invert(95%) sepia(9%) saturate(829%) hue-rotate(124deg) brightness(91%) contrast(94%) "
+        icone.src = "imagens/moon-svgrepo-com.svg"
+    } else {
+        tema = true;
+        icone.style.transform = "translateX(0%)";
+        icone.style.filter = "invert(77%) sepia(58%) saturate(392%) hue-rotate(12deg) brightness(107%) contrast(105%)";
+        icone.src = "imagens/sun-svgrepo-com.svg"
     }
-    else {
-        r.style.setProperty ('--main-bg-color', '#00FF00');
-        tema = 0
-    }
+    atualizarTema();
+    sessionStorage.setItem("tema",tema);
+    console.log(tema);
+
 }
 
-var tema = 0
-
-var r = document.querySelector(':root');
+function atualizarTema(){
+    const css = document.getElementById("idCss")
+    if (tema){
+        css.setAttribute("href", "temaClaro.css");
+    } else{
+        css.setAttribute("href", "temaEscuro.css");
+    }
+}

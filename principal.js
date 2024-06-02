@@ -15,18 +15,6 @@ const sites = [
     ["formulario", "formulario.html"]
 ];
 
-var tema;
-
-try{
-    tema = sessionStorage.getItem("tema");
-    console.log("consegui")
-    atualizarTema();
-} catch(error) {
-    sessionStorage.setItem("tema", true);
-    tema = sessionStorage.getItem("tema");
-    atualizarTema();
-}
-
 console.log(sites);
 console.log(sites.length);
 var escolhido = null;
@@ -79,30 +67,59 @@ function restarBP(){
     btnPes.style = "";
 }
 
+// mudar tema //
+
+const corpoBdy = document.querySelector("body");
+const corpo = document.querySelector("body").getAttribute("fundo");
+console.log("savaje = " + corpo);
+
+if (!corpo.includes("nada")){
+    console.log("img personalizado");
+    corpoBdy.style.backgroundImage = `url(${corpo}`;
+    corpoBdy.style.backgroundSize = "cover"; 
+}
+
+var tema = sessionStorage.getItem("tema");
+if (tema == null){
+    sessionStorage.setItem("tema", false);
+    tema = false
+}
+
+function atualizarTema(valor){
+    console.log("bolsonaro")
+    let css = document.getElementById("idCss")
+    if (valor){
+        css.setAttribute("href", "temaClaro.css");
+    } else{
+        css.setAttribute("href", "temaEscuro.css");
+    }
+}
+
 function mudarTema(){
     var icone = document.getElementById("bolsonaro_de_calcinha");
+    console.log("1")
     if (tema == true){
         tema = false;
         icone.style.transform = "translateX(110%)";
         icone.style.filter = "invert(95%) sepia(9%) saturate(829%) hue-rotate(124deg) brightness(91%) contrast(94%) "
         icone.src = "imagens/moon-svgrepo-com.svg"
+        if (corpo != "nada") {
+            corpoBdy.style.backdropFilter = "blur(10px) brightness(50%)";
+        }
+        console.log("2")
+        atualizarTema(tema);
     } else {
         tema = true;
         icone.style.transform = "translateX(0%)";
         icone.style.filter = "invert(77%) sepia(58%) saturate(392%) hue-rotate(12deg) brightness(107%) contrast(105%)";
         icone.src = "imagens/sun-svgrepo-com.svg"
+        if (corpo != "nada") {
+            corpoBdy.style.backdropFilter = "blur(10px) brightness(100%)";
+        }
+        console.log("3")
+        atualizarTema(tema);
     }
-    atualizarTema();
+    console.log("4")
     sessionStorage.setItem("tema",tema);
     console.log(tema);
-
-}
-
-function atualizarTema(){
-    const css = document.getElementById("idCss")
-    if (tema){
-        css.setAttribute("href", "temaClaro.css");
-    } else{
-        css.setAttribute("href", "temaEscuro.css");
-    }
 }

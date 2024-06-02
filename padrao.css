@@ -18,7 +18,7 @@ body{
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px) brightness(100%);
 }
 hr {
     border: 1px solid var(--cor-um);
@@ -167,7 +167,7 @@ main {
     margin-block: 10px;
     margin-inline: 60px;
     min-height: 110vh;
-    padding: 15px;
+    padding: 20px;
 }
 main p{
     font-size: var(--tamanho-letras);
@@ -183,6 +183,8 @@ main h1 {
 main img {
     border-radius: 25px 25px 25px 25px;
     margin: 15px;
+    width: 300px;
+    height: 300px;
 }
 
 footer{

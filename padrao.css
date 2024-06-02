@@ -6,6 +6,8 @@
 
 :root{
     --tamanho-letras: 18px;
+    --icone-claro: invert(92%) sepia(6%) saturate(2481%) hue-rotate(355deg) brightness(103%) contrast(96%);
+    --icone-escuro: invert(89%) sepia(26%) saturate(4202%) hue-rotate(173deg) brightness(116%) contrast(96%);
 }
 
 body{
@@ -61,7 +63,7 @@ header nav ul{
     position: absolute;
     background-color: var(--cor-quatro); 
     transform: translateX(-18.3px);
-    top: 7%;
+    top: 6%;
 }
 .dropdown-menu a{
     padding: 15px;
@@ -147,7 +149,7 @@ header nav ul{
     transition-property: transform;
     transform: translateX(0%);
     pointer-events: none;
-    filter: invert(77%) sepia(58%) saturate(392%) hue-rotate(12deg) brightness(107%) contrast(105%);
+    filter: var(--icone-claro)
 }
 
 .modoCE{

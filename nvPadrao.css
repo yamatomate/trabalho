@@ -5,14 +5,20 @@
 }
 
 :root {
-    --cor-primaria: #3a95d1;
-    --cor-secundaria: rgba(219, 238, 255, 0.589);
-    --cor-terciaria: #e74c3c;
-    --main-bg-color: rgb(21, 255, 0);
+    --cor-um: #3a95d1;
+    --cor-dois: rgba(219, 238, 255, 0.589);
+    --cor-tres: #f8e5e3;
+    --cor-quatro: rgb(21, 255, 0);
+    --cor-cinco: rgb(102, 161, 43);
+    --cor-seis: rgb(7, 155, 74);
+    --cor-sete: rgb(197, 197, 197);
+    --cor-oito: rgb(124, 124, 124);
+    --cor-nove: rgb(21, 255, 0);
+    --cor-dez: rgb(255, 255, 255);
 }
 
 body{
-    color: rgb(0, 0, 0);
+    color: var(--cor-um);
     width: 100%;
     display: block;
     background-image: url(imagens/logoben.svg);
@@ -23,7 +29,7 @@ body{
 }
 
 header {
-    background-color: var(--main-bg-color);
+    background-color: var(--cor-dois);
     width: 100%;
     display: flex;
     align-items: center;
@@ -31,7 +37,7 @@ header {
 }
 
 header a{
-    color: black;
+    color: var(--cor-um);
     text-decoration: none;
 }
 header a #icon{
@@ -53,12 +59,12 @@ header nav ul{
     padding: 18px;
 }
 .dropdown:hover{
-    background-color: rgb(21, 255, 0);
+    background-color: var(--cor-tres);
 }
 .dropdown-menu{
     display: none;
     position: absolute;
-    background-color: rgb(102, 161, 43);  
+    background-color: var(--cor-quatro); 
     transform: translateX(-18.3px);
     top: 7%;
 }
@@ -71,7 +77,7 @@ header nav ul{
 }
 
 .dropdown-menu a:hover{
-    background-color: rgb(3, 150, 16);
+    background-color: var(--cor-tres);
 }
 
 .barraPes{
@@ -85,11 +91,11 @@ header nav ul{
     padding: 5px;
     border: none;
     border-radius: 30px 0px 0px 30px;
-    background-color: rgba(10, 148, 51, 0.322);
+    background-color: var(--cor-cinco);
     width: 85%;
 }
 .barraPes button {
-    background-color: #0A943352;
+    background-color: var(--cor-cinco);
     border-radius: 0px 30px 30px 0px;
     border: none;
     padding: 10px;
@@ -97,16 +103,16 @@ header nav ul{
 }
 .barraPes button:hover{
     cursor: pointer;
-    background-color: rgb(10, 148, 51);
+    background-color: var(--cor-seis);
 }
 .barraPes button:active{
-    background-color: rgb(21, 223, 81);
+    background-color: var(--cor-seis);
 }
 .pesquisa{
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: rgb(167, 167, 167);
+    background-color: var(--cor-sete);
     width: 100%;
     top: 100%;
     padding: 5px;
@@ -114,7 +120,7 @@ header nav ul{
 }
 .pesquisa a{
     padding-block: 10px;
-    background-color: rgb(197, 197, 197);
+    background-color: var(--cor-sete);
     width: 100%;
     height: 50px;
     text-align: center;
@@ -124,7 +130,7 @@ header nav ul{
 }
 .pesquisa p{
     padding-block: 10px;
-    background-color: rgb(124, 124, 124);
+    background-color: var(--cor-oito);
     width: 100%;
     height: 50px;
     text-align: center;
@@ -148,7 +154,7 @@ header nav ul{
 
 .modoCE{
     margin: 5px;
-    background-color: rgb(94, 224, 153);
+    background-color: var(--cor-seis);
     border-radius: 25px 25px 25px 25px;
     width: 6%;
 }
@@ -162,7 +168,7 @@ header nav ul{
 }
 
 main {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-dois);
     border-radius: 25px 25px 25px 25px;
     margin-block: 10px;
     margin-inline: 60px;
@@ -173,7 +179,7 @@ main {
 footer{
     bottom: 0;
     padding: 10px;
-    background-color: rgb(165, 165, 165);
+    background-color: var(--cor-dez);
     width: 100%;
 }
 

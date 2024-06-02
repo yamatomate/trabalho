@@ -14,6 +14,7 @@ const sites = [
   ["vo max", "personagens/Vo_max.html"],
   ["formulario", "formulario.html"],
 ];
+console.log(window.location)
 
 var escolhido = null;
 function pesquisar1() {
@@ -74,13 +75,18 @@ const corpoBdy = document.querySelector("body");
 const corpo = document.querySelector("body").getAttribute("fundo");
 console.log("imagem de fundo personalizada = " + corpo);
 
-if (!corpo.includes("nada")) {
+var temFundo;
+if ( !(corpo === null) ) {
   console.log("img personalizado");
   corpoBdy.style.backgroundImage = `url(${corpo}`;
   corpoBdy.style.backgroundSize = "cover";
+  const temFundo = true;
+} else {
+    const temFundo = false;
 }
 
 // tema claro = false; tema escuro = true
+console.log(sessionStorage)
 var tema = sessionStorage.getItem("tema");
 
 if (tema === null) {
@@ -94,6 +100,7 @@ if (tema === null) {
 
 atualizarTema();
 
+atualizarTema();
 // botão de mudança de tema
 function mudarTema() {
   console.log("alterando tema de: " + tema);
@@ -104,29 +111,32 @@ function mudarTema() {
   }
   console.log("alterando tema para: " + tema);
   sessionStorage.setItem("tema", tema);
+  console.log(sessionStorage) 
   atualizarTema();
 }
 
 function atualizarTema() {
+  const pastaIMG = "/imagens";
   const css = document.getElementById("idCss");
   const icone = document.getElementById("bolsonaro_de_calcinha");
 
-  if (tema) {
+  if (tema){
+    tema = sessionStorage.getItem("tema")
     css.setAttribute("href", "./temaEscuro.css");
     icone.style.filter = "var(--icone-escuro)";
-    icone.setAttribute("src", "imagens/moon-svgrepo-com.svg");
+    icone.setAttribute("src", `${pastaIMG}/moon-svgrepo-com.svg`);
     icone.style.transform = "translateX(140%)";
 
-    if (!corpo.includes("nada")) {
+    if (temFundo) {
       corpoBdy.style.backdropFilter = "blur(10px) brightness(45%)";
     }
   } else {
     css.setAttribute("href", "./temaClaro.css");
     icone.style.filter = "var(--icone-claro)";
-    icone.setAttribute("src", "imagens/sun-svgrepo-com.svg");
+    icone.setAttribute("src", `${pastaIMG}/sun-svgrepo-com.svg`);
     icone.style.transform = "";
 
-    if (!corpo.includes("nada")) {
+    if (temFundo) {
       corpoBdy.style.backdropFilter = "blur(10px) brightness(100%)";
     }
   }

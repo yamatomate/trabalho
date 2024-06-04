@@ -20,7 +20,7 @@ function atualizar(){
     let planeta = document.getElementById("obj_planeta")
     let transX = x+ponto_X()
     let transY = y+ponto_Y()
-    let tamanhokkk = Math.sin(W)*10
+    let tamanhokkk = (Math.sin(W)+Math.cos(W))*-10
     planeta.querySelector("circle").setAttribute("r", `${50-tamanhokkk}`)
     planeta.style.transform= `translate(${transX}px, ${transY}px)`
 }

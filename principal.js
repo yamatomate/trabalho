@@ -116,7 +116,8 @@ function mudarTema() {
 }
 
 function atualizarTema() {
-  const pastaIMG = "/imagens";
+  let pastaIMG = "/imagens";
+  console.log(window.location)
   const css = document.getElementById("idCss");
   const icone = document.getElementById("bolsonaro_de_calcinha");
 

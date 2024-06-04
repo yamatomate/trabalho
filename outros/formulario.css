@@ -46,9 +46,6 @@ button {
 }
 
 body {
-    background-color: rgb(31, 143, 31);
-    background-image: url(imagens/personagens/manny.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 25%;
+    display: flex;
+    background-image: linear-gradient(to right, rgb(167, 33, 28) , rgb(26, 141, 26));
 }

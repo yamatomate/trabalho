@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="padrao.css">
     <link id="idCss" rel="stylesheet" type="text/css" href="temaClaro.css">
-    <script src="padrao.js" defer></script>
+    <script src="principal.js" defer></script>
 </head>
 <body>
     <header>
@@ -85,7 +85,24 @@
     </header>
     <!--corpo-->
         <main>
+            <script type="text/javascript">
+                function testar(){
+                    console.log("foi")
+                    const cam = "/";
+                    let ipt = document.getElementById("testePes");
+                    let link = document.getElementById("testeA");
+                    let camNV = cam + ipt.value;
+                    document.getElementById("testeP").innerHTML = `<p>${camNV}</p>`
+                    link.setAttribute("href", camNV);
+                }
+            </script>
+            <input type="text" vale="" id="testePes" onkeyup="testar()">
+            <p id="testeP">
 
+            </p>
+            <a href="" id="testeA">
+                aqui
+            </a>
         </main>
     <footer>
         <p>feito por Gustavo Lisboa e Pablo William</p>

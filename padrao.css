@@ -15,7 +15,7 @@ body{
     color: var(--cor-um);
     width: 100%;
     display: block;
-    background-image: url(imagens/logoben.svg);
+    background-image: url(/imagens/logoben.svg);
     background-color: var(--cor-onze);
     background-size: 50%;
     background-position: center;

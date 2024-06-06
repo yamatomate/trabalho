@@ -1,59 +1,142 @@
-<html>
-    <header>
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="/imagens/logoben.svg">
+    <link rel="stylesheet" type="text/css" href="/padrao.css" />
+    <link id="idCss" rel="stylesheet" type="text/css" href="./temaClaro.css" />
+    <script src="/principal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/pagina_inicial.html">
+                <img id="icon" src="/imagens/logoben.svg" />
+            </a>
+            <ul>
+                <li class="dropdown">
+                    <p>series</p>
+                    <div class="dropdown-menu">
+                        <a href="/benClassico.html"> classico </a>
+                        <a href="/benForca.html"> força alienigena </a>
+                        <a href="/benSupre.html"> supremacia alienigena </a>
+                        <a href="/benOmniverse.html"> omniverse </a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <p>categoria</p>
+                    <div class="dropdown-menu">
+                        <a href="/aliens/todosAliens.html"> aliens </a>
+                        <a href="/personagens/todosPersonagens.html"> personagens </a>
+                        <a href="/objetos/todosObjetos.html"> objetos </a>
+                        <a> vilões </a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <p>mais</p>
+                    <div class="dropdown-menu">
+                        <a href="/outros/formulario.html"> formulario </a>
+                        <a href="/outros/planeta.html"> planeta </a>
+                        <a href="/outros/agradecimento.html"> ... </a>
+                    </div>
+                </li>
+            </ul>
+            <!--barra de pesquisa-->
+            <div class="barraPes" autocomplete="off">
+                <input id="inputBP" type="text" value="" onkeyup="pesquisar1()" onblur="restarBP()" />
+                <button id="btnBp" onclick="confirmar()">
+                    <img src="/imagens/lupa.svg" />
+                </button>
+                <div class="pesquisa" id="pes"></div>
+            </div>
+        </nav>
+        <!--modo escuro e claro-->
+        <div class="modoCE" onclick="mudarTema()">
+            <img id="bolsonaro_de_calcinha" src="/imagens/sol.svg" />
+        </div>
     </header>
-    <body>
+    <!--corpo-->
+    <main>
         <h1>
-        Vilgax
+            Vilgax
         </h1>
         <hr>
         <h2>
-        <i>
-        Chimera Sui Generis
-        </i>
+            <i>
+                Chimera Sui Generis
+            </i>
         </h2>
         <p>
-        Vilgax é um alienígena maligno da raça Chimera Sui Generis, conquistador intergaláctico e também o arqui-inimigo de Ben.
+            Vilgax é um alienígena maligno da raça Chimera Sui Generis, conquistador intergaláctico e também o
+            arqui-inimigo de
+            Ben.
+        </p>
+        <p>
+            Vilgax é implacável, cruel e tem uma grande sede de poder. Seu principal objetivo é conseguir o Omnitrix, para que ele possa usá-lo para criar um exército de Bioids com o poder de se transformar e, assim, conquistar o Universo.[1] Perseguindo esse desafio há quase 240 anos, Vilgax se mostra muito persistente, não permitindo que obstáculos interrompam sua busca. Lutando com seriedade e foco, se mostrava o oposto de Ben, seu arqui-inimigo, que sempre o enfrentava com humor e ironia. Ele busca se vingar de todos aqueles que já o derrotaram, o que inclui, em destaque, a família Tennyson, que acumula vitórias sobre ele desde os anos 1960.
         </p>
         <h2>
-        Habilidades
+            Habilidades
         </h2>
         <p>
-            Antes de seu aumento, Vilgax não apresentava grandes poderes ou habilidades especiais, exceto por uma tremenda agilidade e habilidades de combate corpo-a-corpo. Ele já havia uma força e resistência elevadas, sendo mencionado uma vez que ele poderia resistir até mesmo a uma explosão nuclear.<br>
-            Ao se recuperar em seu tanque de contenção e ganhar uma nova aparência, Vilgax tornou-se muito mais poderoso. Ele já demonstrou ser extremamente forte, resistente, rápido e ágil em confrontos ao longo das séries.<br>
-        
+            Antes de seu aumento, Vilgax não apresentava grandes poderes ou habilidades especiais, exceto por uma
+            tremenda
+            agilidade e habilidades de combate corpo-a-corpo. Ele já havia uma força e resistência elevadas, sendo
+            mencionado
+            uma vez que ele poderia resistir até mesmo a uma explosão nuclear.<br>
+            Ao se recuperar em seu tanque de contenção e ganhar uma nova aparência, Vilgax tornou-se muito mais
+            poderoso. Ele já
+            demonstrou ser extremamente forte, resistente, rápido e ágil em confrontos ao longo das séries.<br>
+
             Ele ganhou esteróides que aumentavam muito sua força física e raiva (embora lhe causassem muita dor).<br>
-        
-            Ele também podia sobreviver as duras condições do vácuo do espaço sem equipamentos por um curto período de tempo.<br>
+
+            Ele também podia sobreviver as duras condições do vácuo do espaço sem equipamentos por um curto período de
+            tempo.<br>
+        </p>
+        <h3>esferas de energia</h3>
+        <p>
+            Vilgax pode disparar esferas de energia vermelhas de sua mão.
         </p>
         </div>
         <hr>
         <div>
-        <div class="dives">
-        <img src="../imagens/">
-        <p>aparencia no Classico</p>
-        </div>
-        <div class="dives">
-        <img src="../imagens/">
-        <p>aparencia no Supremacia alienigena</p>
-        </div>
-        <div class="dives">
-        <img src="../imagens/">
-        <p>aparencia no Omniverse</p>
-        </div>
+            <div class="dives">
+                <img src="../imagens/viloes/vilgax.png">
+                <p>aparencia no Classico</p>
+            </div>
+            <div class="dives">
+                <img src="../imagens/viloes/vilgaxFS.png">
+                <p>aparencia no Força alienigena e no Supremacia alienigena</p>
+            </div>
+            <div class="dives">
+                <img src="../imagens/viloes/vilgaxOm.png">
+                <p>aparencia no Omniverse</p>
+            </div>
         </div>
         <hr>
-        <div class="tenor-gif-embed" data-postid="20962786" data-share-method="host" data-aspect-ratio="1.78771" data-width="40%"><a href="https://tenor.com/view/vilgax-ben10-gigante-raphaela-espa%C3%A7o-gif-20962786">Vilgax Ben10 GIF</a>from <a href="https://tenor.com/search/vilgax-gifs">Vilgax GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <div class="tenor-gif-embed" data-postid="20962786" data-share-method="host" data-aspect-ratio="1.78771"
+            data-width="40%"><a
+                href="https://tenor.com/view/vilgax-ben10-gigante-raphaela-espa%C3%A7o-gif-20962786">Vilgax
+                Ben10 GIF</a>from <a href="https://tenor.com/search/vilgax-gifs">Vilgax GIFs</a></div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
         <div>
-        <h3>Relacionados</h3>
-        <ul>
-        <li>
-        <a href=""></a>
-        </li>
-        <li>
-        <a href=""></a>
-        </li>
-        </ul>
+            <!--<h3>Relacionados</h3>
+            <ul>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+            </ul>-->
         </div>
-    </body>
+    </main>
+    <footer>
+        <p>feito por Gustavo Lisboa e Pablo William</p>
+    </footer>
+</body>
+
 </html>

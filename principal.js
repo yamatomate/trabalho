@@ -45,29 +45,33 @@ function pesquisar1() {
     let i = 0;
     escolhido = null;
     console.log("começando varredura");
+    if (window.location.protocol != "http:"){
+        alert("abra o trabalho pelo Live server no Vs code.\npor falta de conhecimento não fui capaz de manipular bem os path das coisas")
+    }
     for (i = 0; i < sites.length; i++) {
-        console.log(
+        /*console.log(
             `${i} (${iptPesquisa} == ${sites[i][0]})=${sites[i][0].includes(
                 iptPesquisa
             )}`
-        );
+        );*/
         if (!sites[i][0].toLocaleLowerCase().includes(iptPesquisa)) {
-            console.log("tipo1");
+            //console.log("tipo1");
         } else {
-            console.log("tipo2");
+           // console.log("tipo2");
             escolhido = sites[i];
             if (opa < 5) {
                 pesqui.innerHTML += `<a href="${sites[i][1]}"> ${sites[i][0]} </a>`;
                 opa += 1;
             }
         }
-        console.log(escolhido);
     }
+    console.log(escolhido);
     console.log("varredura completa " + opa);
+    console.log(window.location)
 }
 function confirmar() {
     var tavazio = escolhido != null;
-    console.log(tavazio);
+    console.log(escolhido)
     if (tavazio) {
         console.log("tem algo:" + escolhido);
         window.open(escolhido[1], "_self");
@@ -131,12 +135,12 @@ function mudarTema() {
 function atualizarTema() {
     const css = document.getElementById("idCss");
     const icone = document.getElementById("bolsonaro_de_calcinha");
-    let teste = window.location.origin
+
     if (tema) {
         tema = sessionStorage.getItem("tema");
         css.setAttribute("href", "./temaEscuro.css");
         icone.style.filter = "var(--icone-escuro)";
-        icone.setAttribute("src", `${teste}/imagens/lua.svg`);
+        icone.setAttribute("src", `/imagens/lua.svg`);
         icone.style.transform = "translateX(140%)";
 
         if (temFundo) {
@@ -145,7 +149,7 @@ function atualizarTema() {
     } else {
         css.setAttribute("href", "./temaClaro.css");
         icone.style.filter = "var(--icone-claro)";
-        icone.setAttribute("src", `${teste}/imagens/sol.svg`);
+        icone.setAttribute("src", `/imagens/sol.svg`);
         icone.style.transform = "";
 
         if (temFundo) {

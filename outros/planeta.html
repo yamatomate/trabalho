@@ -61,14 +61,13 @@
     <script src="./elipse.js" defer></script>
     <label>
         <div>
-        W:<input id="input_W" type="number" oninput="mostrar1()" value="0" min="0" max="100" step="0.1"><br>
-        a:<input id="input_a" type="range" onchange="mostrar1()" value="0" min="0" max="10" step="0.1"><br>
-        b:<input id="input_b" type="range" onchange="mostrar1()" value="0" min="0" max="10" step="0.1"><br>
-        t:<input id="input_t" type="range" onchange="mostrar1()" value="0" min="0" max="10" step="0.1">
-        </div>
+            W:<input id="input_W" type="number" oninput="mostrar1()" value="0" min="0" max="100" step="0.1"><br>
+            a:<input id="input_a" type="number" onchange="mostrar1()" value="0" min="0" max="10" step="0.1"><br>
+            b:<input id="input_b" type="number" onchange="mostrar1()" value="0" min="0" max="10" step="0.1"><br>
+            t:<input id="input_t" type="number" onchange="mostrar1()" value="0" min="0" max="10" step="0.1">
+            </div>
         <p id="mostre">valores</p>
     </label>
-
         <main id="plano">
             <svg width="150" height="150" xmlns="http://www.w3.org/2000/svg" id="obj_planeta" style="size: auto;">
                 <defs>
@@ -80,6 +79,5 @@
                 <circle cx="75" cy="75" r="50" fill="url(#RadialGradient1)"/>
             </svg>
         </main>
-
 </body>
 </html>

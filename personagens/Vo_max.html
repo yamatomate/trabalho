@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wiki do ben 10</title>
+    <link rel="icon" href="/imagens/logoben.svg">
+    <link rel="stylesheet" type="text/css" href="../padrao.css">
+    <link id="idCss" rel="stylesheet" type="text/css" href="./temaClaro.css">
+    <script src="../principal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="pagina_inicial.html">
+                <img id="icon" src="/imagens/logoben.svg">
+            </a>
+            <ul>
+                <li class="dropdown">
+                    <p>
+                        series
+                    </p>
+                    <div class="dropdown-menu">
+                        <a href="/benClassico.html">
+                            classico
+                        </a>
+                        <a href="/benForca.html">
+                            força alienigena
+                        </a>
+                        <a href="/benSupre.html">
+                            supremacia alienigena
+                        </a>
+                        <a href="/benOmniverse.html">
+                            omniverse
+                        </a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <p>
+                        categoria
+                    </p>
+                    <div class="dropdown-menu">
+                        <a href="/aliens/todosAliens.html">
+                            aliens
+                        </a>
+                        <a href="/personagens/todosPersonagens.html">
+                            personagens
+                        </a>
+                        <a href="/objetos/todosObjetos.html">
+                            objetos
+                        </a>
+                        <a>
+                            vilões
+                        </a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <p>
+                        mais
+                    </p>
+                    <div class="dropdown-menu">
+                        <a href="/outros/formulario.html"> formulario </a>
+                        <a href="/outros/planeta.html"> planeta </a>
+                        <a href="/outros/agradecimento.html"> ... </a>
+                    </div>
+                </li>
+            </ul>
+            <!--barra de pesquisa-->
+            <div class="barraPes" autocomplete="off">
+                <input id="inputBP" type="text" value="" onkeyup="pesquisar1()" onblur="restarBP()">
+                <button id="btnBp" onclick="confirmar()">
+                    <img src="/imagens/lupa.svg">
+                </button>
+                <div class="pesquisa" id="pes">
+                </div>
+            </div>
+        </nav>
+        <!--modo escuro e claro-->
+        <div class="modoCE" onclick="mudarTema()">
+            <img id="bolsonaro_de_calcinha" src="/imagens/sun-svgrepo-com.svg">
+        </div>
+
+    </header>
+    <!--corpo-->
+    <main>
+        <div><!--nome e descrição-->
+            <h1>
+                Maxwell Tennyson
+            </h1>
+            <hr>
+            <h2>
+                <i>
+                    Homo sapiens
+                </i>
+            </h2>
+            <br>
+            <p>
+                Maxwell "Max" Tennyson é o avô de Ben, Gwen e Ken, é Magistrado das Forças Encanadoras da Terra e um
+                grande aliado. Ele foi introduzido no episódio E Então Eram 10, o qual levou seus netos para uma viagem
+                por todo o país nas férias de verão. Ao longo da série, foi descoberto que ele não era um simples
+                Encanador, atualmente ele é um encanador semi aposentado.
+            </p>
+            <br>
+            <h2>
+                Habilidades
+            </h2>
+            <br>
+            <p>
+                Max tem acesso a todas as armas dos Encanadores, como já teve treinamento e inclusive foi promovido ao
+                honorário cargo de Magistrado. Ele também conta com treinamento militar de quando foi um servidor da
+                força aérea dos Estados Unidos e quando foi trabalhar na NASA.
+                <br>
+                Max Tennyson é experiente e tem conhecimento de tecnologia.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <div class="dives">
+                <img src="../imagens/personagens/Vo_max.png">
+                <p>aparencia no Classico</p>
+            </div>
+            <div class="dives">
+                <img src="../imagens/personagens/Vo_maxFa.png">
+                <p>aparencia no Supremacia alienigena</p>
+            </div>
+            <div class="dives">
+                <img src="../imagens/personagens/Vo_maxOm.png">
+                <p>aparencia no Omniverse</p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h3>Relacionados</h3>
+            <ul>
+                <li>
+                    <a href="gwen.html">Gwen Tennyson</a>
+                </li>
+                <li>
+                    <a href="ben.html">Ben Tennyson</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>feito por Gustavo Lisboa e Pablo William</p>
+    </footer>
+</body>
+
+</html>

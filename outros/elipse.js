@@ -45,3 +45,5 @@ planeta.style.transform = `translate(${x}px, ${y}px)`
 
 // Chama a função atualizar() a cada 100 milissegundos
 setInterval(atualizar, 100);
+
+planeta.style.transform = `translate(${x}px, ${y}px)`

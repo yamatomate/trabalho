@@ -1,72 +1,131 @@
-<!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../imagens/logoben.svg">
-    <link rel="stylesheet" type="text/css" href="../aliens/aliens.css">
-    <title>Wiki de Ben 10</title>
-</head>
-<body>
-    <nav>
-        <a href="../pagina_inicial.html" class="logo">
-            <img src="../imagens/logoben.svg" id="tamanhologo">
-        </a>
-        <div class="caixaLinks">
-            <a href="../aliens/todosAliens.html" class="linksNav">aliens</a>
-            <!--<a href="../viloes/todosViloes.html" class="linksNav">vilões</a>-->
-            <a href="../personagens/todosPersonagens.html" class="linksNav">personagens</a>
-            <a href="../objetos/todosObjetos.html" class="linksNav">objetos</a>
-        </div>
-    </nav>
-    <div class="centralizar">
-        <div><!--nome e descrição-->
-            <h1>
-                Bala de canhão
-            </h1>
-            <hr>    
-            <h2>
-                <i>
-                    Pelarota arburiano
-                </i>
-            </h2>
-            <p>
-                Bala de Canhão é desajeitado. Ele é um alienígena de ombros largos cobertos naturalmente por uma blindagem amarela em suas costas, ombros e em seus braços. É a única serie em que ele tem olhos amarelos. Ele é predominantemente branco com preto na sua metade superior e tem uma faixa preta de seu nariz, passando pelas costas até o peito. Cada mão possui quatro garras e tem dentes afiados.
-            </p>
-            <h2>
-                Habilidades
-            </h2>
-            <h3>
-                Forma de esfera
-            </h3>
-            <p>
-                Bala de Canhão pode se transformar em uma esfera e rolar como um tatu para envolver-se em seu revestimento. Há espaço suficiente no interior do reservatório, enquanto se mantém enrolado para proteger e transportar outras pessoas e coisas. Quando está na forma de uma bola, Bala de Canhão pode aumentar a sua força de rotação em inimigos como um ataque, bem como ricochetear-se pelas superfícies.
-            </p>
-        </div>
-        <hr>
-        <div>
-            <div class="dives">
-                <img src="../imagens/aliens/raio_de_canhao.png">
-                <p>aparencia no Classico</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="icon" href="/imagens/logoben.svg" />
+        <link rel="stylesheet" type="text/css" href="/padrao.css" />
+        <link
+            id="idCss"
+            rel="stylesheet"
+            type="text/css"
+            href="./temaClaro.css"
+        />
+        <script src="/principal.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/pagina_inicial.html">
+                    <img id="icon" src="/imagens/logoben.svg" />
+                </a>
+                <ul>
+                    <li class="dropdown">
+                        <p>series</p>
+                        <div class="dropdown-menu">
+                            <a href="/benClassico.html"> classico </a>
+                            <a href="/benForca.html"> força alienigena </a>
+                            <a href="/benSupre.html"> supremacia alienigena </a>
+                            <a href="/benOmniverse.html"> omniverse </a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <p>categoria</p>
+                        <div class="dropdown-menu">
+                            <a href="todosAliens.html"> aliens </a>
+                            <a href="/personagens/todosPersonagens.html">
+                                personagens
+                            </a>
+                            <a href="/objetos/todosObjetos.html"> objetos </a>
+                            <a> vilões </a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <p>mais</p>
+                        <div class="dropdown-menu">
+                            <a href="/outros/formulario.html"> formulario </a>
+                            <a href="/outros/planeta.html"> planeta </a>
+                            <a href="/outros/agradecimento.html"> ... </a>
+                        </div>
+                    </li>
+                </ul>
+                <!--barra de pesquisa-->
+                <div class="barraPes" autocomplete="off">
+                    <input
+                        id="inputBP"
+                        type="text"
+                        value=""
+                        onkeyup="pesquisar1()"
+                        onblur="restarBP()"
+                    />
+                    <button id="btnBp" onclick="confirmar()">
+                        <img src="/imagens/lupa.svg" />
+                    </button>
+                    <div class="pesquisa" id="pes"></div>
+                </div>
+            </nav>
+            <!--modo escuro e claro-->
+            <div class="modoCE" onclick="mudarTema()">
+                <img id="bolsonaro_de_calcinha" src="/imagens/sol.svg" />
             </div>
-            <div class="dives">
-                <img src="../imagens/aliens/raio_de_canhaoFa.png">
-                <p>aparencia no Força Alienigena e Supremacia</p>
+        </header>
+        <!--corpo-->
+        <main>
+            <div>
+                <!--nome e descrição-->
+                <h1>Bala de canhão</h1>
+                <hr />
+                <h2>
+                    <i> Pelarota arburiano </i>
+                </h2>
+                <p>
+                    Bala de Canhão é desajeitado. Ele é um alienígena de ombros
+                    largos cobertos naturalmente por uma blindagem amarela em
+                    suas costas, ombros e em seus braços. É a única serie em que
+                    ele tem olhos amarelos. Ele é predominantemente branco com
+                    preto na sua metade superior e tem uma faixa preta de seu
+                    nariz, passando pelas costas até o peito. Cada mão possui
+                    quatro garras e tem dentes afiados.
+                </p>
+                <h2>Habilidades</h2>
+                <h3>Forma de esfera</h3>
+                <p>
+                    Bala de Canhão pode se transformar em uma esfera e rolar
+                    como um tatu para envolver-se em seu revestimento. Há espaço
+                    suficiente no interior do reservatório, enquanto se mantém
+                    enrolado para proteger e transportar outras pessoas e
+                    coisas. Quando está na forma de uma bola, Bala de Canhão
+                    pode aumentar a sua força de rotação em inimigos como um
+                    ataque, bem como ricochetear-se pelas superfícies.
+                </p>
             </div>
-            <div class="dives">
-                <img src="../imagens/aliens/raio_de_canhaoOm.png">
-                <p>aparencia no omnivserse</p>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <!--<h3>Relacionados</h3>
+            <hr />
+            <div>
+                <div class="dives">
+                    <img src="../imagens/aliens/raio_de_canhao.png" />
+                    <p>aparencia no Classico</p>
+                </div>
+                <div class="dives">
+                    <img src="../imagens/aliens/raio_de_canhaoFa.png" />
+                    <p>aparencia no Força Alienigena e Supremacia</p>
+                </div>
+                <div class="dives">
+                    <img src="../imagens/aliens/raio_de_canhaoOm.png" />
+                    <p>aparencia no omnivserse</p>
+                </div>
+            </div>  
+            <hr />
+            <div>
+                <!--<h3>Relacionados</h3>
             <ul>
                 <li>
                     <a href="" class="links"></a>
                 </li>
             </ul>-->
-        </div>
-    </div>
-</body>
+            </div>
+        </main>
+        <footer>
+            <p>feito por Gustavo Lisboa e Pablo William</p>
+        </footer>
+    </body>
 </html>

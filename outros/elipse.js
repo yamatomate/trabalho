@@ -1,4 +1,3 @@
-
 function mostrar1(){
     let valor = document.getElementById("mostre")
     W = document.getElementById("input_W").value;
@@ -6,6 +5,7 @@ function mostrar1(){
     b = document.getElementById("input_b").value * 10;
     t =document.getElementById("input_t").value * 10;
     valor.innerText = `W:${W}\n a:${a}\n b:${b}\n t:${t}`;
+    atualizar()
 }
 
 function ponto_X(){
@@ -25,7 +25,6 @@ function atualizar(){
     planeta.style.transform= `translate(${transX}px, ${transY}px)`
 }
 
-
 var W; //posição na equação
 var a; //largura
 var b; //altura
@@ -41,3 +40,8 @@ const y_relativo = planeta.getBoundingClientRect().height;
 
 const x = x_plano /2 - x_relativo/2
 const y = y_plano /2 - y_relativo/2
+
+planeta.style.transform = `translate(${x}px, ${y}px)`
+
+// Chama a função atualizar() a cada 100 milissegundos
+setInterval(atualizar, 100);

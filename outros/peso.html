@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+  <form id="weightForm">
+    <label for="earthWeight">Massa em (Kg):</label>
+    <input type="number" id="earthWeight" name="earthWeight" required>
+    
+    <label for="planet">Planeta:</label>
+    <select id="planet" name="planet">
+      <option value="Mercury">Mercúrio</option>
+      <option value="Venus">Vênus</option>
+      <option value="Mars">Marte</option>
+      <option value="Jupiter">Júpiter</option>
+    </select>
+    
+    <button type="button" onclick="calculateWeight()">Calcular</button>
+  </form>
+  
+  <div id="result"></div>
+  
+  <script>
+    function calculateWeight() {
+      const earthWeight = parseFloat(document.getElementById('earthWeight').value);
+      const selectedPlanet = document.getElementById('planet').value;
+      
+      // Gravidade relativa em relação à Terra para cada planeta
+      const gravityMap = {
+        Mercury: 0.38,
+        Venus: 0.91,
+        Mars: 0.38,
+        Jupiter: 2.34,
+      };
+      
+      const gravity = gravityMap[selectedPlanet];
+      const weightOnPlanet = earthWeight * gravity;
+      
+      document.getElementById('result').innerHTML = `Seu peso em ${selectedPlanet} seria aproximadamente ${weightOnPlanet.toFixed(2)} kg.`;
+    }
+  </script>
+</body>
+</html>

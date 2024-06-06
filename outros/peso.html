@@ -4,43 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="../padrao.css">
+    <style>
+      :root{
+  --cor-zero: rgb(255,255,255);
+  --cor-um: #000000;
+  --cor-dois: rgb(42, 185, 61);
+  --cor-tres: rgb(132, 83, 224);
+  --cor-quatro: rgb(94, 114, 97);
+  --cor-cinco: rgb(189, 189, 189);
+  --cor-seis: rgb(31, 86, 187);
+  --cor-sete: rgb(48, 92, 79);
+  --cor-oito: rgb(223, 223, 223);
+  --cor-nove: rgba(136, 172, 172, 0.603);
+  --cor-dez: rgb(51, 51, 51);
+  --cor-onze: rgb(219, 235, 221);
+  }
+  body{
+      display: flex;
+      flex-direction: column;
+  }
+  label{
+      background-color: var(--cor-nove);
+      padding: 10px;
+      display: flex;
+      margin: auto;
+  }
+  main {
+    margin: auto;
+    background-color: var(--cor-nove);
+    width: 90%;
+    text-align: center;
+  }
+main label{
+  width: 30%;
+}
+main input{
+  width: 30%;
+}
+  nav a{
+      padding: 15px;
+      transition: 0.5s;
+      background-color: rgb(42, 124, 35);
+      border-radius: 5px 5px 5px 5px;
+  }
+  nav a:hover{
+      background-color: rgb(61, 226, 83);
+  }
+  </style>
 </head>
 <body>
-    <h1>Calculadora</h1>
-  <form id="weightForm">
-    <label for="earthWeight">Massa em (Kg):</label>
-    <input type="number" id="earthWeight" name="earthWeight" required>
+  <header>
+      <nav>
+          <a href="../pagina_inicial.html">
+              voltar
+          </a>
+      </nav>
+  </header>
+  <main>
     
-    <label for="planet">Planeta:</label>
-    <select id="planet" name="planet">
-      <option value="Mercury">Mercúrio</option>
-      <option value="Venus">Vênus</option>
-      <option value="Mars">Marte</option>
-      <option value="Jupiter">Júpiter</option>
-    </select>
+      <h1>Calculadora</h1>
+    <form id="weightForm">
+      <label for="earthWeight">Massa em (Kg):</label>
+      <input type="number" id="earthWeight" name="earthWeight" required>
     
-    <button type="button" onclick="calculateWeight()">Calcular</button>
-  </form>
+      <label for="planet">Planeta:</label>
+      <select id="planet" name="planet">
+        <option value="Mercury">Mercúrio</option>
+        <option value="Venus">Vênus</option>
+        <option value="Mars">Marte</option>
+        <option value="Jupiter">Júpiter</option>
+      </select>
+    
+      <button type="button" onclick="calculateWeight()">Calcular</button>
+    </form>
+    <div id="result"></div>
   
-  <div id="result"></div>
-  
-  <script>
-    function calculateWeight() {
-      const earthWeight = parseFloat(document.getElementById('earthWeight').value);
-      const selectedPlanet = document.getElementById('planet').value;
-      
-      // Gravidade relativa em relação à Terra para cada planeta
-      const gravityMap = {
-        Mercury: 0.38,
-        Venus: 0.91,
-        Mars: 0.38,
-        Jupiter: 2.34,
-      };
-      
-      const gravity = gravityMap[selectedPlanet];
-      const weightOnPlanet = earthWeight * gravity;
-      document.getElementById('result').innerHTML = `Seu peso em ${selectedPlanet} seria aproximadamente ${weightOnPlanet.toFixed(2)} kg.`;
-    }
-  </script>
+    <script>
+      function calculateWeight() {
+        const earthWeight = parseFloat(document.getElementById('earthWeight').value);
+        const selectedPlanet = document.getElementById('planet').value;
+        
+        // Gravidade relativa em relação à Terra para cada planeta
+        const gravityMap = {
+          Mercury: 0.38,
+          Venus: 0.91,
+          Mars: 0.38,
+          Jupiter: 2.34,
+        };
+        
+        const gravity = gravityMap[selectedPlanet];
+        const weightOnPlanet = earthWeight * gravity;
+        document.getElementById('result').innerHTML = `Seu peso em ${selectedPlanet} seria aproximadamente ${weightOnPlanet.toFixed(2)} kg.`;
+      }
+    </script>
+  </main>
 </body>
 </html>

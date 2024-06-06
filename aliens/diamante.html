@@ -1,43 +1,44 @@
-<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../padrao.css" />
+    <link rel="icon" href="/imagens/logoben.svg">
+    <link rel="stylesheet" type="text/css" href="/padrao.css" />
     <link id="idCss" rel="stylesheet" type="text/css" href="./temaClaro.css" />
-    <script src="../principal.js" defer></script>
+    <script src="/principal.js" defer></script>
   </head>
-  <body >
+  <body>
     <header>
       <nav>
-        <a href="../pagina_inicial.html">
-          <img id="icon" src="../imagens/logoben.svg" />
+        <a href="/pagina_inicial.html">
+          <img id="icon" src="/imagens/logoben.svg" />
         </a>
         <ul>
           <li class="dropdown">
             <p>series</p>
             <div class="dropdown-menu">
-              <a href="../benClassico.html"> classico </a>
-              <a href="../benForca.html"> força alienigena </a>
-              <a href="../benSupre.html"> supremacia alienigena </a>
-              <a href="../benOmniverse.html"> omniverse </a>
+              <a href="/benClassico.html"> classico </a>
+              <a href="/benForca.html"> força alienigena </a>
+              <a href="/benSupre.html"> supremacia alienigena </a>
+              <a href="/benOmniverse.html"> omniverse </a>
             </div>
           </li>
           <li class="dropdown">
             <p>categoria</p>
             <div class="dropdown-menu">
-              <a href="todosAliens.html"> aliens </a>
-              <a href="../personagens/todosPersonagens.html"> personagens </a>
-              <a href="../objetos/todosObjetos.html"> objetos </a>
+              <a href="/todosAliens.html"> aliens </a>
+              <a href="/personagens/todosPersonagens.html"> personagens </a>
+              <a href="/objetos/todosObjetos.html"> objetos </a>
               <a> vilões </a>
             </div>
           </li>
           <li class="dropdown">
             <p>mais</p>
             <div class="dropdown-menu">
-              <a href="formulario.html"> formulario </a>
-              <a> sobre </a>
+              <a href="/outros/formulario.html"> formulario </a>
+              <a href="/outros/planeta.html"> planeta </a>
+              <a href="/outros/agradecimento.html"> ... </a>
             </div>
           </li>
         </ul>
@@ -51,14 +52,14 @@
             onblur="restarBP()"
           />
           <button id="btnBp" onclick="confirmar()">
-            <img src="../imagens/lupa.svg" />
+            <img src="/imagens/lupa.svg" />
           </button>
           <div class="pesquisa" id="pes"></div>
         </div>
       </nav>
       <!--modo escuro e claro-->
       <div class="modoCE" onclick="mudarTema()">
-        <img id="bolsonaro_de_calcinha" src="../imagens/sun-svgrepo-com.svg" />
+        <img id="bolsonaro_de_calcinha" src="/imagens/sol.svg" />
       </div>
     </header>
     <!--corpo-->

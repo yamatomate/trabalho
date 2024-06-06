@@ -3,23 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../imagens/logoben.svg">
-    <link rel="stylesheet" type="text/css" href="../personagens/perso.css">
-    <title>Wiki de Ben 10</title>
+    <title>wiki do ben 10</title>
+    <link rel="icon" href="/imagens/logoben.svg">
+    <link rel="stylesheet" type="text/css" href="../padrao.css">
+    <link id="idCss" rel="stylesheet" type="text/css" href="./temaClaro.css">
+    <script src="../principal.js" defer></script>
 </head>
 <body>
-    <nav>
-        <a href="../pagina_inicial.html" class="logo">
-            <img src="../imagens/logoben.svg" id="tamanhologo">
-        </a>
-        <div class="caixaLinks">
-            <a href="../aliens/todosAliens.html" class="linksNav">aliens</a>
-            <!--<a href="../viloes/todosViloes.html" class="linksNav">vilões</a>-->
-            <a href="../personagens/todosPersonagens.html" class="linksNav">personagens</a>
-            <a href="../objetos/todosObjetos.html" class="linksNav">objetos</a>
+    <header>
+        <nav>
+            <a href="pagina_inicial.html">
+                <img id="icon" src="/imagens/logoben.svg">
+            </a>
+        <ul>
+            <li class="dropdown">
+                <p>
+                    series
+                </p>
+                <div class="dropdown-menu">
+                    <a href="/benClassico.html">
+                        classico
+                    </a>
+                    <a href="/benForca.html">
+                        força alienigena
+                    </a>
+                    <a href="/benSupre.html">
+                        supremacia alienigena
+                    </a>
+                    <a href="/benOmniverse.html">
+                        omniverse
+                    </a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <p>
+                    categoria
+                </p>
+                <div class="dropdown-menu">
+                    <a href="/aliens/todosAliens.html">
+                        aliens
+                    </a>
+                    <a href="/personagens/todosPersonagens.html">
+                        personagens
+                    </a>
+                    <a href="/objetos/todosObjetos.html">
+                        objetos
+                    </a>
+                    <a>
+                        vilões
+                    </a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <p>
+                    mais
+                </p>
+                <div class="dropdown-menu">
+                    <a href="/outros/formulario.html"> formulario </a>
+                    <a href="/outros/planeta.html"> planeta </a>
+                    <a href="/outros/agradecimento.html"> ... </a>
+                  </div>
+            </li>
+        </ul>
+            <!--barra de pesquisa-->
+            <div class="barraPes" autocomplete="off">
+                <input id="inputBP" type="text" value="" onkeyup="pesquisar1()" onblur="restarBP()">
+                <button id="btnBp" onclick="confirmar()">
+                    <img src="/imagens/lupa.svg">
+                </button>
+                    <div class="pesquisa" id="pes">
+                </div>
+            </div>
+        </nav>
+        <!--modo escuro e claro-->
+        <div class="modoCE" onclick="mudarTema()">
+            <img id="bolsonaro_de_calcinha" src="/imagens/sun-svgrepo-com.svg">
         </div>
-    </nav>
-    <div class="centralizar">
+
+    </header>
+    <!--corpo-->
+        <main>
         <div><!--nome e descrição-->
             <h1>
                 Azmuth
@@ -33,6 +96,7 @@
             <p>
                 O Primeiro Pensador Azmuth é um Galvaniano, sendo o ser mais inteligente em três, talvez cinco galáxias, inventor de todos os protótipos e da versão final do Omnitrix, da Ascalon, de Primus e de diversos outros artefatos tecnológicos.
             </p>
+            <br>
             <h2>
                 Invenções
             </h2>
@@ -43,36 +107,44 @@
             <p>
                 Azmuth criou a Ascalon, a arma mais poderosa já inventada, com o objetivo de entender os fundamentos do universo, mas acabou causando consequências desastrosas, destruindo planetas, acabando com vidas, fazendo com que Xeneth, sua namorada, passasse a odiá-lo, e fazendo com que o universo todo passe a odiá-lo por sua criação.
             </p>
+            <br>
             <h3>
                 Armadura de Proteção Galvaniana
             </h3>
             <p>
                 É uma armadura criada por Azmuth para se proteger das ameaças de Xenon, enquanto esteve lá. Ela possui a forma arredondada, sendo feita de metal cinza. Possui linhas pretas separando suas mãos, braços, pernas, pés, e cintura. Em seu peito, há o simbolo do Omnitrix em amarelo, e em seus ombros, há tubos com DNA fluindo por entre eles. Sua "cabeça", é pequena, sendo quadrada e minúscula, com "olhos" verdes brilhantes. A Armadura também tem um cajado, o qual possui todo seu armamento.
             </p>
+            <br>
             <h3>
                 Mecamorfos galvânicos
             </h3>
             <p>
                 Os mecamorfos galvânicos são umas espécie bio-mecânica criada por Azmuth e alguns cientistas na tentativa de transformar a lua galvaniana, Galvan B, habitável, mas a experiência foi longe de mais, e acabou os criando. Não demorou muito antes do primeiro Mecamorfo galvânico se juntar à comunidade galáctica e conhecer seus criadores em pessoa. Azmuth e os Galvans foram surpreendidos com o resultado inesperado de seu experimento em Galvan B. Com a ajuda deles, eles construíram uma grande civilização dentro de dias.
             </p>
+            <br>
             <h3>
                 Protótipos e versão final do Omnitrix
             </h3>
             <p>
                 Azmuth, arrependido de todo o mal que causou ao criar a Ascalon, e tendo decidido trabalhar em ciências pacíficas, começou a desenvolver protótipos para o Omnitrix, no qual tinha o intuito de unir os seres de outros planetas e até mesmo de evitar guerras, mostrando-os como era ser outra forma de vida, e também para evitar a extinção de certas espécies. Ele criou vários protótipos para o dispositivo, dentre eles, estão:
             </p>
+            <br>
             <p>
                 Unitrix: De início, ele decidiu criar uma versão que armazenasse um DNA por vez, o Unitrix, mas viu que a ideia não daria certo, pois teria que criar vários desses para armazenar o DNA de todas as espécies existentes no universo, abandonando a ideia, tendo criado apenas um.
             </p>
+            <br>
             <p>
                 Omnitrix (Protótipo): Já que criar vários dispositivos iguais, um para cada espécie, ele decidiu criar um que armazenasse o DNA de todas as espécies existentes no universo, criando o primeiro protótipo real do Omnitrix.
             </p>
+            <br>
             <p>
                 Superomnitrix: Foi uma tentativa de Azmuth de criar um Omnitrix definitivo, mas foi roubado por seu ex-ajudante, Albedo, que implantou uma função que permitia transformar o usuário em formas supremas. Suas funções são as mesmas de sua versão anterior, com o extra de poder "evoluir" algumas espécies, transformando-as em suas versões supremas.
             </p>
+            <br>
             <p>
                 Omnitrix: A versão definitiva do Omnitrix, que Azmuth esteve trabalhando desde que Ben recebeu seu primeiro protótipo.
             </p>
+            <br>
         </div>
         <hr>
         <div>
@@ -98,6 +170,10 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>feito por Gustavo Lisboa e Pablo William</p>
+    </footer>
 </body>
+
 </html>

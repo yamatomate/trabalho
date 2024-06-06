@@ -3,23 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../imagens/logoben.svg">
-    <link rel="stylesheet" type="text/css" href="../personagens/perso.css">
-    <title>Wiki de Ben 10</title>
+    <title>wiki do ben 10</title>
+    <link rel="icon" href="/imagens/logoben.svg">
+    <link rel="stylesheet" type="text/css" href="../padrao.css">
+    <link id="idCss" rel="stylesheet" type="text/css" href="./temaClaro.css">
+    <script src="../principal.js" defer></script>
 </head>
 <body>
-    <nav>
-        <a href="../pagina_inicial.html" class="logo">
-            <img src="../imagens/logoben.svg" id="tamanhologo">
-        </a>
-        <div class="caixaLinks">
-            <a href="../aliens/todosAliens.html" class="linksNav">aliens</a>
-            <!--<a href="../viloes/todosViloes.html" class="linksNav">vilões</a>-->
-            <a href="../personagens/todosPersonagens.html" class="linksNav">personagens</a>
-            <a href="../objetos/todosObjetos.html" class="linksNav">objetos</a>
+    <header>
+        <nav>
+            <a href="pagina_inicial.html">
+                <img id="icon" src="/imagens/logoben.svg">
+            </a>
+        <ul>
+            <li class="dropdown">
+                <p>
+                    series
+                </p>
+                <div class="dropdown-menu">
+                    <a href="/benClassico.html">
+                        classico
+                    </a>
+                    <a href="/benForca.html">
+                        força alienigena
+                    </a>
+                    <a href="/benSupre.html">
+                        supremacia alienigena
+                    </a>
+                    <a href="/benOmniverse.html">
+                        omniverse
+                    </a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <p>
+                    categoria
+                </p>
+                <div class="dropdown-menu">
+                    <a href="/aliens/todosAliens.html">
+                        aliens
+                    </a>
+                    <a href="/personagens/todosPersonagens.html">
+                        personagens
+                    </a>
+                    <a href="/objetos/todosObjetos.html">
+                        objetos
+                    </a>
+                    <a>
+                        vilões
+                    </a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <p>
+                    mais
+                </p>
+                <div class="dropdown-menu">
+                    <a href="/outros/formulario.html"> formulario </a>
+                    <a href="/outros/planeta.html"> planeta </a>
+                    <a href="/outros/agradecimento.html"> ... </a>
+                  </div>
+            </li>
+        </ul>
+            <!--barra de pesquisa-->
+            <div class="barraPes" autocomplete="off">
+                <input id="inputBP" type="text" value="" onkeyup="pesquisar1()" onblur="restarBP()">
+                <button id="btnBp" onclick="confirmar()">
+                    <img src="/imagens/lupa.svg">
+                </button>
+                    <div class="pesquisa" id="pes">
+                </div>
+            </div>
+        </nav>
+        <!--modo escuro e claro-->
+        <div class="modoCE" onclick="mudarTema()">
+            <img id="bolsonaro_de_calcinha" src="/imagens/sun-svgrepo-com.svg">
         </div>
-    </nav>
-    <div class="centralizar">
+
+    </header>
+    <!--corpo-->
+        <main>
         <div><!--nome e descrição-->
             <h1>
                 Kevin levin
@@ -67,6 +130,10 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>feito por Gustavo Lisboa e Pablo William</p>
+    </footer>
 </body>
+
 </html>
